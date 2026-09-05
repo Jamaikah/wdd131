@@ -8,40 +8,51 @@
     --main-background-color: rgba(35, 43, 95, 0.945);
     --header-footer-fontcolor: rgba(238, 239, 244);
     --border-color: rgb(126, 126, 130);
+    --nav-background-color: rgb(125, 127, 131);
+    --default-font-color: black;
+    --nav-hover-color: rgb(231, 227, 227);
 }
 
-header span {
-    padding: 25px;
+header {
+    padding: 20px 0 0 0;
     margin: 0;
     display: block;
     text-align: center;
+    background-color: var(--main-background-color);
+}
+
+header span {
     color: var(--header-footer-fontcolor);
     font-size: 27px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: var(--main-background-color);
+    font-family: "Doppio One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header nav {
     padding: 20px;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: space-evenly;
     font-size: 17px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(125, 127, 131);
+    font-family: "Doppio One", sans-serif;
+    background-color: var(--nav-background-color);
 }
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: var(--default-font-color);
 }
 
-main h1 {
+main {
     padding: 20px;
     margin: 1rem;
+}
+main h1 {
+    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Doppio One", sans-serif;
 }
 
 .card-grid {
@@ -63,7 +74,7 @@ main h1 {
     padding: 10px 20px;
     margin: 0;
     font-size: 17px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Doppio One", sans-serif;
     border-radius: 4px;
 }
 
@@ -102,7 +113,7 @@ main h1 {
     padding: 0 0 9px 0;
     font-size: 19px;
     margin: 0 0 10px 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Doppio One", sans-serif;
     border-bottom: 1px solid var(--border-color)
 }
 
@@ -119,7 +130,7 @@ main h1 {
 }
 
 .country-description {
-    margin: 0;
+    margin-top: 5px;
     font-family: sans-serif;
     letter-spacing: 0.1px;
 }
@@ -130,12 +141,11 @@ main h1 {
 }
 
 .resources-list li {
-    padding: 5px 0px;
-    border-bottom: 1px solid white;
+    padding: 7px 0px;
 }
 
 .resources-list a {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Doppio One", sans-serif;
     text-decoration: none;
 }
 
@@ -152,5 +162,5 @@ footer {
 }
 
 nav a:hover {
-    color: rgb(231, 227, 227);
+    color: var(--nav-hover-color);
 }
