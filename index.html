@@ -3,9 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Haezell Jamaikah Abdul</title>
+    <meta name="description"
+    content="WDD 131 - Dynamic Web Fundamentals | Haezell Jamaikah Abdul | This is my homepage for this course.">
+    <link rel="stylesheet" href="styles/base.css">
+    <script defer src="scripts/getdates.js"></script>
 </head>
 <body>
-    <h1>WDD 131 | Haezell Abdul</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="linkedin.com">Linkedin</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/philip/4?lang=eng&id=13#12?lang=eng">Favorite Scripture Verse</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Haezell Jamaikah A. Abdul</h1>
+
+        <div class="card-grid">
+            <section class="card">
+                <h2 class="card-title">About Me</h2>
+                <div class="card-content">
+                    <div class="about-content">
+                        <img src="images/me-photo.jpg" alt="Haezell Jamaikah Abdul's photo" width="180" class="aboutme-img">
+                        <p class="aboutme-description">Hello! My name is Haezell Jamaikah Abdul and you can call me Jamaikah, since most of my friends and family call me that. I am a person who enjoys trying new things and learning from different experiences. In my free time, I like listening to music,
+                        playing guitar, watching anime, and going for runs. I also enjoy spending time doing things that help me relax and
+                        improve myself little by little.
+                        </p>
+                    </div>
+        
+                    <div class="country-content">
+                        <h3 class="country-title">Philippines</h3>
+                        <div class="country-info">
+                            <img src="images/ph-flag.png" alt="Flag of the Philippines" class="flag-img">
+                            <p class="country-description">The Philippines is a country in Southeast Asia made up of thousands of islands. It is known for its beautiful beaches,
+                        rich culture, delicious food, and friendly people. The country also has many different traditions, languages, and places
+                        to explore.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="card">
+                <h2 class="card-title">Web Dev Resources</h2>
+                <ul class="resources-list">
+                    <li>
+                        <a href="#">Dev.to.community</a>
+                    </li>
+                    <li>
+                        <a href="#">Smashing Magazine</a>
+                    </li>
+                    <li>
+                        <a href="#">CSS Tricks</a>
+                    </li>
+                    <li>
+                        <a href="#">W3 Schools</a>
+                    </li>
+                    <li>
+                        <a href="#">web.dev</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            © 2026 | Haezell Jamaikah Abdul | Philippines
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
