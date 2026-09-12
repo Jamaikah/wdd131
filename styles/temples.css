@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: rgb(26, 26, 90);
+    padding: 1rem;
+    margin: auto;
+}
+
+header h1 {
+    color: white;
+    font-size: 1.5rem;
+}
+    
+nav {
+    max-width: 700px;
+    margin: auto;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+    
+#menu::before {
+    content: "☰";
+}
+    
+#menu.open::before {
+    content: "x";
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(26, 26, 90);
+    top: 100%;
+    right: 0;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+nav a:hover {
+    background-color: #eee;
+    color: #000;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    grid-gap: 2rem;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 400%;
+}
+
+figcaption {
+    margin: 1rem 0 1rem 0;
+}
+
+footer {
+    margin-top: 1rem;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(26, 26, 90);
+    color: white;
+}
