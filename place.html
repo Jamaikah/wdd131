@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900&display=swap"
+        rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Philippines</h1>
+    </header>
+
+    <div class="hero">
+        <picture>
+            <source srcset="images/philippine-eagle-large.webp" media="(min-width: 800px)">
+            <source srcset="images/philippine-eagle.webp">
+            <img src="images/philippine-eagle.webp" alt="National Bird of the Philippines">
+        </picture>
+    </div>
+
+    <main>
+        <section class="card-data">
+            <h2>Data</h2>
+            <ul class="data-list">
+                <li><span class="label">Area:</span> <span class="value">300,000 sq km</span></li>
+                <li><span class="label">Population:</span> <span class="value">112.9 million</span></li>
+                <li><span class="label">Capital:</span> <span class="value">Manila</span></li>
+                <li><span class="label">Languages:</span> <span class="value">Filipino, English, Cebuano</span></li>
+                <li><span class="label">Currency:</span> <span class="value">Philippine Peso (₱)</span></li>
+                <li><span class="label">Time Zone:</span> <span class="value">UTC +8</span></li>
+                <li><span class="label">Calling Code:</span> <span class="value">+63</span></li>
+                <li><span class="label">Internet TLD:</span> <span class="value">.ph</span></li>
+            </ul>
+        </section>
+
+        <section class="card-weather">
+            <h2>Weather</h2>
+            <div class="weather-icon">
+                <img src="images/weather-icon.svg" alt="Weather Icon" class="icon-svg">
+            </div>
+            <ul class="weather-data">
+                <li><span class="label">Temperature:</span> <span class="value">30 ℃</span></li>
+                <li><span class="label">Conditions:</span> <span class="value">Sunny</span></li>
+                <li><span class="label">Wind:</span> <span class="value">12 km/h</span></li>
+                <li><span class="label">Wind Chill:</span> <span class="value" id="wind-chill">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            © 2026 | Haezell Jamaikah Abdul | Philippines
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
