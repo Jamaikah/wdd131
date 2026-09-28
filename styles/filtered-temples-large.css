@@ -1,0 +1,48 @@
+@media screen and (min-width: 600px) {
+    header {
+        background-color: rgb(26, 26, 90);
+        color: white;
+    }
+
+    header p {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        align-items: center;
+    }
+
+    .navigation a {
+        padding: 1rem;
+        margin: 0 0.5rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+    }
+
+    main {
+        max-width: 1200px;
+    }
+
+    .temple-card img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    nav a:hover {
+        border-radius: 5px;
+    }
+}

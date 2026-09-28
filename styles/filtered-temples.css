@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: rgb(26, 26, 90);
+    padding: 1rem;
+    margin: auto;
+}
+
+header p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+header h1 {
+    color: white;
+    font-size: 1.5rem;
+}
+    
+nav {
+    display: flex;
+    max-width: 700px;
+    margin: auto;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+    
+#menu::before {
+    content: "☰";
+}
+    
+#menu.open::before {
+    content: "x";
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(26, 26, 90);
+    top: 100%;
+    right: 0;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+nav a:hover {
+    background-color: #eee;
+    color: #000;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    grid-gap: 2rem;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 400%;
+}
+
+figcaption {
+    margin: 1rem 0 1rem 0;
+}
+
+footer {
+    margin-top: 1rem;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(26, 26, 90);
+    color: white;
+}
+
+.temple-card {
+    background-color: rgb(236, 235, 235);
+    border: solid 1px rgb(218, 217, 217);
+    border-radius: 1px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.temple-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.label {
+    color: rgb(26, 26, 90);
+    font-weight: 700;
+}
+
+.temple-card p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.temple-card img {
+    margin-top: 1rem;
+    box-shadow: 0 0 1.3rem rgba(0, 0, 0, 0.397);
+    border-radius: 1px;
+    display: block;
+}
