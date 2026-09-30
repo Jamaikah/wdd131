@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 1rem;
+    background-color: #4e6b45;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header img {
+    width: 5.5%;
+    height: auto;
+    display: block;
+}
+
+header h1 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+body {
+    background-color: #f3ece3;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+main {
+    padding: 1rem;
+    margin: 1rem 0 0 1rem
+}
+
+.site-name {
+    margin-bottom: 1.5rem;
+}
+
+.site-purpose {
+    margin-bottom: 1.5rem;
+}
+
+.scenarios {
+    margin-bottom: 1.5rem;
+}
+
+.color-schema {
+    margin-bottom: 1.5rem;
+}
+
+.typography {
+    margin-bottom: 1.5rem;
+}
+
+.wireframes {
+    margin-bottom: 1.5rem;
+}
+
+.mobile-view img {
+    margin-top: 1rem;
+    width: 20%;
+    height: auto;
+}
+
+.wide-view img {
+    margin-top: 3rem;
+    width: 50%;
+    height: auto;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.domain {
+    margin-top: 10px;
+    font-weight: 650;
+}
