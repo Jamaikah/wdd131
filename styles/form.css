@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(224, 224, 215);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(21, 21, 43);
+}
+
+header h1 {
+    color: rgb(220, 217, 217);
+    font-size: 1.8rem;
+}
+
+.prod-rev {
+    padding: 1rem;
+}
+
+.prod-rev fieldset {
+    border-radius: 5px;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.prod-rev label {
+    display: block;
+}
+
+.italic {
+    margin-top: -0.3rem;
+    font-style: italic;
+}
+
+.prod-rev select {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.prod-rev input[type="radio"] {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.title {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    margin-top: 0.5rem;
+}
+
+.prod-rev input[type="checkbox"] {
+    font-size: 1rem;
+    margin: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.prod-rev input[type="date"] {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 0.5rem;
+}
+
+.prod-rev input[type="text"] {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.prod-rev textarea {
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.prod-rev input[type="submit"] {
+    padding: 0.7rem;
+    margin: 0.7rem 0 0.5rem 0;
+    width: 100%;
+    max-width: 400px;
+    font-weight: 700;
+    font-size: 17px;
+    background-color: rgb(21, 21, 43);
+    color: rgb(220, 217, 217);
+}
+
+input[type="submit"]:hover {
+    color: rgb(17, 18, 18);
+    background-color: rgb(139, 141, 143);
+} 
+
+footer {
+    padding: 1rem;
+    background-color: rgb(21, 21, 43);
+    color: rgb(220, 217, 217);
+    text-align: center;
+    font-weight: 500;
+}
+
+main p {
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding: 1rem;
+}

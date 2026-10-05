@@ -1,0 +1,53 @@
+@media screen and (min-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .prod-rev {
+        font-size: 20px;
+    }
+
+    .prod-rev label, .italic, textarea, .prod-rev input[type="submit"] {
+        margin-left: 1.3rem;
+    }
+
+    .prod-rev textarea,
+    .prod-rev input[type="submit"] {
+        max-width: 98.5%;
+    }
+
+    .prod-rev input[type="checkbox"] {
+        margin-top: 1rem;
+    }
+
+    .prod-rev textarea {
+        padding: 3rem;
+    }
+
+    .prod-rev input[type="text"],
+    .prod-rev input[type="date"],
+    .prod-rev select {
+        padding: 1rem;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .title {
+        margin-bottom: 1rem;
+        margin-top: 0.9rem;
+    }
+
+    .prod-rev input[type="submit"] {
+        padding: 1.2rem;
+    }
+
+    main p {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+}
+

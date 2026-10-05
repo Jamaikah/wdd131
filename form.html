@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="This site is for the week's 5 assignment. In this task we are tasked to create a product review form.">
+    <meta name="author" content="Haezell Jamaikah Abdul">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="prod-rev">
+            <fieldset>
+                <label class="title">Product Name
+                    <select name="product" id="product" required>
+                       <option value="">Select a Product...</option>
+                    <option value="fc-1888">Flux Capacitor</option>
+                    <option value="fc-2050">Power Laces</option>
+                    <option value="fs-1987">Time Circuits</option>
+                    <option value="ac-2000">Low Voltage Reactor</option>
+                    <option value="jj-1969">Warp Equalizer</option>
+                    </select>
+                </label>
+
+                <div>
+                    <label class="title">Overall Rating</label></div>
+                    <label><input type="radio" name="stars" id="stars" value="1-star" required>★</label>
+                    <label><input type="radio" name="stars" id="stars" value="2-star" required>★★</label>
+                    <label><input type="radio" name="stars" id="stars" value="3-star" required>★★★</label>
+                    <label><input type="radio" name="stars" id="stars" value="4-star" required>★★★★</label>
+                    <label><input type="radio" name="stars" id="stars" value="5-star" required>★★★★★</label>
+
+                <div>
+                    <label class="title">Date of Installation</label>
+                     <label><input type="date" name="completeDate" required></label>
+                </div>
+
+                <div>
+                    <label class="title">Which feature did you find useful in the product?</label>
+                </div>
+                <div class="italic">(Check all that apply)</div>
+                <label><input type="checkbox" name="durability" id="durability" value="yes"> Durability</label>
+                <label><input type="checkbox" name="ease" id="ease" value="yes"> Ease of Use</label>
+                <label><input type="checkbox" name="performance" id="performance" value="yes"> Performance</label>
+                <label><input type="checkbox" name="design" id="design" value="yes"> Design</label>
+
+                <label class="title">Written Review (Optional)</label>
+                <textarea name="review" id="review"></textarea>
+
+                <label class="title">Your Name (Optional)</label>
+                <label><input type="text" name="name" id="name"></label>
+
+                <input type="submit" value="Post Review">
+            </fieldset>
+        </form>
+    </main>
+    
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            © 2026 | Haezell Jamaikah Abdul | Philippines
+        </p>
+    
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
