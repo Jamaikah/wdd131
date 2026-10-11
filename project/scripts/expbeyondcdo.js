@@ -87,7 +87,7 @@ const places = [
         location: "Initao and Libertad, Misamis Oriental",
         description: "Discover a protected natural area with forest and coastal scenery.",
         image: "images/initao-libertad.webp",
-        categories: ["Hiking & Nature", "Beaches & Islands", "Photography"],
+        categories: ["Hiking & Nature", "Beaches & Islands", "Culture & History", "Photography"],
         link: "https://pais.bmb.gov.ph/home/info/DENRRX00003"
     },
     {
@@ -103,7 +103,7 @@ const places = [
         location: "Camiguin",
         description: "Explore an island province known for waterfalls, beaches, and volcanic scenery.",
         image: "images/camiguin-island.webp",
-        categories: ["Beaches & Islands", "Hiking & Nature", "Culture & History", "Photography"],
+        categories: ["Beaches & Islands", "Hiking & Nature", "Photography"],
         link: "https://camiguin.gov.ph/where-to-go/"
     },
     {
@@ -196,16 +196,16 @@ function placesDisplay(list) {
 
     placeContainer.innerHTML = "";
 
-    list.forEach(places => {
+    list.forEach(place => {
         const card = document.createElement("section");
         card.className = "places-card";
 
         card.innerHTML = `
-            <h2>${places.name}</h2>
-            <img src="${places.image}" alt="${places.name}" loading="lazy">
-            <p><span class="label">Location:</span> ${places.location}</p >
-            <p><span class="label">Description:</span> ${places.description}</p>
-            <p><span class="label">Link:</span> ${places.link}</p>`;
+            <h2>${place.name}</h2>
+            <img src="${place.image}" alt="${place.name}" loading="lazy">
+            <p><span class="label">Location:</span> ${place.location}</p >
+            <p><span class="label">Description:</span> ${place.description}</p>
+            <p><span class="label">Link:</span> ${place.link}</p>`;
 
         placeContainer.appendChild(card);
     });
@@ -241,8 +241,8 @@ if (adventureLink) {
 if (hikingLink) {
     hikingLink.addEventListener("click", (e) => {
         e.preventDefault();
-        const filtered = places.filter(place =>
-            place.categories.includes("Hiking & Nature")
+        const filtered = places.filter(hike =>
+            hike.categories.includes("Hiking & Nature")
         );
         placesDisplay(filtered);
     });
@@ -251,8 +251,8 @@ if (hikingLink) {
 if (waterfallsLink) {
     waterfallsLink.addEventListener("click", (e) => {
         e.preventDefault();
-        const filtered = places.filter(place =>
-            place.categories.includes("Waterfalls")
+        const filtered = places.filter(falls =>
+            falls.categories.includes("Waterfalls")
         );
         placesDisplay(filtered);
     });
@@ -261,8 +261,8 @@ if (waterfallsLink) {
 if (beachesLink) {
     beachesLink.addEventListener("click", (e) => {
         e.preventDefault();
-        const filtered = places.filter(place =>
-            place.categories.includes("Beaches & Islands")
+        const filtered = places.filter(beach =>
+            beach.categories.includes("Beaches & Islands")
         );
         placesDisplay(filtered);
     });
@@ -271,8 +271,8 @@ if (beachesLink) {
 if (cafeLink) {
     cafeLink.addEventListener("click", (e) => {
         e.preventDefault();
-        const filtered = places.filter(place =>
-            place.categories.includes("Cafés & Food Trip")
+        const filtered = places.filter(cafe =>
+            cafe.categories.includes("Cafés & Food Trips")
         );
         placesDisplay(filtered);
     });
@@ -281,8 +281,8 @@ if (cafeLink) {
 if (chillLink) {
     chillLink.addEventListener("click", (e) => {
         e.preventDefault();
-        const filtered = places.filter(place =>
-            place.categories.includes("Chill Spots")
+        const filtered = places.filter(chill =>
+            chill.categories.includes("Chill Spots")
         );
         placesDisplay(filtered);
     });
@@ -291,8 +291,8 @@ if (chillLink) {
 if (cultureLink) {
     cultureLink.addEventListener("click", (e) => {
         e.preventDefault();
-        const filtered = places.filter(place =>
-            place.categories.includes("Culture & History")
+        const filtered = places.filter(culture =>
+            culture.categories.includes("Culture & History")
         );
         placesDisplay(filtered);
     });
@@ -301,8 +301,8 @@ if (cultureLink) {
 if (photoLink) {
     photoLink.addEventListener("click", (e) => {
         e.preventDefault();
-        const filtered = places.filter(place =>
-            place.categories.includes("Photography")
+        const filtered = places.filter(photog =>
+            photog.categories.includes("Photography")
         );
         placesDisplay(filtered);
     });
