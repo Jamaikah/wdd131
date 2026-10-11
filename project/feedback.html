@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Share your feedback, suggestions, or questions to help improve Explore Beyond CDO.">
+    <meta name="author" content="Haezell Jamaikah Abdul">
+    <title>expbeyondcdo | Feedback</title>
+    <link rel="stylesheet" href="styles/expbeyondcdo.css">
+    <link rel="stylesheet" href="styles/expbeyondcdo-large.css">
+    <script src="scripts/feedback.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/explore-beyond-cdo-logo.webp" alt="Explore Beyond CDO Logo">
+        <h1>Explore Beyond CDO</h1>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="places.html">Places</a>
+            <a href="activities.html">Activities</a>
+            <a href="feedback.html">Feedback & Inquiries</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Feedback & Inquiries</h2>
+        <form method="get" action="confirmation.html" id="feedbackForm">
+            <fieldset class="questions">
+                <label class="title-feedback">What would you like to do?</label>
+                <label for="feedback"><input type="radio" name="type" id="feedback" value="feedback" required>Feedback or suggestion</label>
+                <label for="inquiry"><input type="radio" name="type" id="inquiry" value="inquiry" required>Question or inquiry</label>
+
+
+                <label class="title-ratings">How would you rate your experience with our website?</label>
+                <label for="choice1"><input type="radio" name="rating" id="choice1" value="5">Excellent</label>
+                <label for="choice2"><input type="radio" name="rating" id="choice2" value="4">Good</label>
+                <label for="choice3"><input type="radio" name="rating" id="choice3" value="3">Average</label>
+                <label for="choice4"><input type="radio" name="rating" id="choice4" value="2">Poor</label>
+                <label for="choice5"><input type="radio" name="rating" id="choice5" value="1">Very Poor</label>
+
+
+                <label class="title-message">Your message</label>
+                <textarea name="message" id="message" required></textarea>
+
+
+                <input type="submit" value="Post Feedback & Inquiry">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            © 2026 | Haezell Jamaikah Abdul | Philippines
+        </p>
+        
+        <p id="lastModified"></p>
+        <a href="reference.html">References</a>
+    </footer>
+</body>
+</html>

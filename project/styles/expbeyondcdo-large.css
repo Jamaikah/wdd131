@@ -1,0 +1,208 @@
+@media screen and (min-width: 600px) {
+
+    header {
+        padding: 0.7rem;
+        background-color: #4e6b45;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        margin-left: auto;
+        position: static;  
+        width: auto;         
+        top: auto;           
+        right: auto;         
+        padding: 0;          
+        background-color: transparent;  
+        z-index: auto;      
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .abt-cdo p {
+        font-size: 18px;
+    }
+
+    .navigation a {
+        color: black;
+        font-weight: 600;
+        padding: 1rem;
+        border: none;
+        border-radius: 0;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    
+    header img {
+        width: 5.5%;
+        height: auto;
+        display: block;
+    }
+    
+    header h1 {
+        display: block;
+        font-family: "Outfit", sans-serif;
+        font-weight: 800;
+        font-size: 2rem;
+    }
+
+    .in-cdo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 10px;
+    }
+        
+    .in-cdo img {
+        display: block;
+        width: 90%;
+        height: 70%;
+        border-radius: 10px;
+        margin-left: 1.5rem;
+    }
+        
+    .in-cdo figcaption {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10px;
+        margin-bottom: 1rem;
+        font-size: 18px
+    }
+
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-gap: 2rem;
+    }
+    
+    .places-card img {
+        width: 75%;
+        height: 40%;
+        padding: 10px;
+    }
+    
+    .places-card {
+        background-color: #4e6b45;
+        border: 1px solid rgb(215, 205, 205);
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    .places-card p {
+        padding: 10px;
+        text-align: left;
+        margin-left: 2rem;
+        font-size: 15px;
+    }
+    
+    .places-card h2 {
+        margin-bottom: 0.5rem;
+        font-size: 22px;
+    }
+    
+    .places-card p:nth-last-child {
+        margin-bottom: 0;
+    }
+    
+    .label {
+        font-weight: 700;
+    }
+
+    h3 {
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .navigation-act {
+        padding: 0.5rem;
+        border: solid 1px rgb(215, 205, 205);
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .navigation-act a {
+        color: black;
+        padding: 1rem;
+        border: none;
+        border-radius: 10px;
+        background-color: #4e6b45;
+        text-decoration: none;
+    }
+    
+    .fieldset-act {
+        border: none;
+    }
+    
+    .exp-act {
+        margin-top: 1rem;
+    }
+    
+    .questions {
+        border: 1px solid rgb(215, 205, 205);
+        border-radius: 10px;
+        padding: 1rem;
+    }
+    
+    .questions label {
+        margin: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .title,
+    .title2,
+    .title3 {
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+    
+    .questions textarea {
+        margin: 0.5rem;
+        width: 100%;
+        height: 100px;
+    }
+    
+    .questions .title,
+    .questions .title2,
+    .questions .title3 {
+        display: block;
+        margin-top: 30px;
+    }
+    
+    .questions input[type="submit"] {
+        padding: 1rem;
+        margin: 0.5rem;
+        width: 100%;
+        background-color: #4e6b45;
+        font-weight: 600;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+    #more-places:hover,
+    .button-act:hover,
+    .navigation-act a:hover,
+    .questions input[type="submit"]:hover,
+    .navigation a:hover {
+        background-color: #5d964c;
+    }
+}

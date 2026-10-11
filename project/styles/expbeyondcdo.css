@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 0.7rem;
+    background-color: #4e6b45;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    position: absolute;
+    top: 8%;
+    right: 0;
+    width: 100%;
+    padding: 2rem 0;
+    z-index: 100;
+    background-color: #4e6b45;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    color: black;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px; 
+}
+
+header img {
+    width: 10%;
+    height: auto;
+    display: block;
+}
+
+header h1 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+body {
+    background-color: #f3ece3;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-text {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.hero p {
+    margin-bottom: 2rem;
+    font-size: 15px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+
+.abt-cdo p{
+    padding: 1rem;
+    margin: 3rem;
+    font-size: 15px;
+}
+
+.in-cdo {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    padding: 10px;
+}
+
+.in-cdo img {
+    display: block;
+    width: 90%;
+    height: 70%;
+    border-radius: 10px;
+    margin-left: 1.5rem;
+}
+
+.in-cdo figcaption {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    font-size: 15px;
+}
+
+fieldset {
+    border: none;
+    border-top: 2.5px solid black;
+    margin-bottom: 2rem;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #4e6b45;
+    margin-top: 2rem;
+    font-size: 15px;
+}
+
+#more-places,
+.button-act {
+    padding: 1rem;
+    position: relative;
+    width: 30%;
+    left: 35%;
+    margin-bottom: 1rem;
+    background-color: #4e6b45;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.button-cdo a, .button-act a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.places-card img {
+    width: 75%;
+    height: 40%;
+    padding: 10px;
+}
+
+.places-card {
+    background-color: #4e6b45;
+    border: 1px solid rgb(215, 205, 205);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.places-card p {
+    padding: 10px;
+    text-align: left;
+    margin-left: 2rem;
+    font-size: 15px;
+}
+
+.places-card h2 {
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+}
+
+.places-card p:nth-last-child {
+    margin-bottom: 0;
+}
+
+.label {
+    font-weight: 700;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 15px;
+}
+
+.navigation-act {
+    padding: 0.5rem;
+    border: solid 1px rgb(215, 205, 205);
+    display: grid;
+}
+
+.navigation-act a {
+    color: black;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #4e6b45;
+    text-decoration: none;
+    margin-bottom: 0.3rem;
+    font-size: 15px;
+}
+
+.fieldset-act {
+    border: none;
+}
+
+.exp-act {
+    margin-top: 1rem;
+}
+
+.questions {
+    border: 1px solid rgb(215, 205, 205);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.questions label {
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title, .title2, .title3 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.questions textarea {
+    margin: 0.5rem;
+    width: 100%;
+    height: 100px;
+}
+
+.questions .title, .questions .title2, .questions .title3 {
+    display: block;
+    margin-top: 30px;
+}
+
+.questions input[type="submit"] {
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 100%;
+    background-color: #4e6b45;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#more-places:hover, .button-act:hover, .navigation-act a:hover, .questions input[type="submit"]:hover, .navigation a:hover {
+    background-color: #5d964c;
+    border-radius: 10px;
+}
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: rgb(14, 13, 13);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
