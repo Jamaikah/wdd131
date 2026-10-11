@@ -242,7 +242,7 @@ if (hikingLink) {
     hikingLink.addEventListener("click", (e) => {
         e.preventDefault();
         const filtered = places.filter(place =>
-            place.categories.includes("Hiking")
+            place.categories.includes("Hiking & Nature")
         );
         placesDisplay(filtered);
     });
@@ -262,7 +262,7 @@ if (beachesLink) {
     beachesLink.addEventListener("click", (e) => {
         e.preventDefault();
         const filtered = places.filter(place =>
-            place.categories.includes("Beaches")
+            place.categories.includes("Beaches & Islands")
         );
         placesDisplay(filtered);
     });
@@ -272,7 +272,7 @@ if (cafeLink) {
     cafeLink.addEventListener("click", (e) => {
         e.preventDefault();
         const filtered = places.filter(place =>
-            place.categories.includes("Cafe")
+            place.categories.includes("Cafés & Food Trip")
         );
         placesDisplay(filtered);
     });
@@ -282,7 +282,7 @@ if (chillLink) {
     chillLink.addEventListener("click", (e) => {
         e.preventDefault();
         const filtered = places.filter(place =>
-            place.categories.includes("Chill")
+            place.categories.includes("Chill Spots")
         );
         placesDisplay(filtered);
     });
@@ -292,7 +292,7 @@ if (cultureLink) {
     cultureLink.addEventListener("click", (e) => {
         e.preventDefault();
         const filtered = places.filter(place =>
-            place.categories.includes("Culture")
+            place.categories.includes("Culture & History")
         );
         placesDisplay(filtered);
     });
@@ -302,7 +302,7 @@ if (photoLink) {
     photoLink.addEventListener("click", (e) => {
         e.preventDefault();
         const filtered = places.filter(place =>
-            place.categories.includes("Photo")
+            place.categories.includes("Photography")
         );
         placesDisplay(filtered);
     });
